@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Emir Emirov</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Общий стиль */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1a1c2c, #2e026d, #701a75);
+      color: #f1f5f9;
+      line-height: 1.7;
+      background-attachment: fixed;
+    }
+
+    h1, h2 {
+      color: #a78bfa;
+      text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+    }
+
+    a {
+      color: #38f9d7;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    a:hover {
+      color: #f472b6;
+      text-shadow: 0 0 8px #f472b6;
+    }
+
+    /* Навигация */
+    nav {
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    nav a {
+      margin: 0 14px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Основной контейнер */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section {
+      margin-bottom: 80px;
+      padding: 25px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Кнопка */
+    button {
+      background: linear-gradient(90deg, #38f9d7, #43e97b);
+      color: #0f172a;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(56, 249, 215, 0.7);
+    }
+    button:hover {
+      background: linear-gradient(90deg, #f472b6, #c084fc);
+      color: white;
+      box-shadow: 0 0 20px rgba(244, 114, 182, 0.8);
+    }
+
+    /* Картинка справа */
+    #about img {
+      border-radius: 14px;
+      margin-left: 20px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
+    }
+
+    /* Список */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: rgba(255, 255, 255, 0.08);
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    ul li:hover {
+      background: rgba(167, 139, 250, 0.2);
+    }
+
+    /* Проекты */
+    #projects p {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 14px;
+      border-radius: 6px;
+      margin: 12px 0;
+      transition: 0.3s;
+    }
+    #projects p:hover {
+      background: rgba(244, 114, 182, 0.2);
+    }
+  </style>
+</head>
+<body>
+  
+  <h1 id="top" style="text-align:center; margin-top:30px;">Emir Emirov</h1>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Hi, Emir Here!</h2>
+      <p>I build and design things for the web.</p>
+      <p><a href="mailto:Emirovn@icloud.com"><button>Say hi</button></a></p>
+    </section>
+
+    <section id="about">
+      <h2>/about me</h2>
+      <img src="https://backiee.com/static/wallpapers/1000x563/386745.jpg"
+      alt="Profile" width="190" height="140" align="right">
+      <p>I am currently focused on becoming a <b>Frontend Developer</b> with a strong background in Software Engineering.  
+      I enjoy building modern, responsive, and user-friendly websites.</p>
+      <p>Here are some technologies I have been working with:</p>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React.js</li>
+        <li>TypeScript</li>
+        <li>Python (learning)</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>/experience</h2>
+      <p><b>Frontend Developer</b></p>
+      <p>Developing simple and responsive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.  
+      Focused on creating clean layouts and user-friendly interfaces. Collaborated on small projects and personal portfolio websites.</p>
+
+      <p><b>Background in Software Engineering</b></p>
+      <p>Have an academic background in Software Engineering, which helps me understand programming fundamentals and problem-solving approaches.  
+      While my main focus is <b>frontend development</b>, I am continuously learning new tools and programming languages to grow into a full-stack developer.</p>
+    </section>
+
+    <section id="projects">
+      <h2>/projects</h2>
+      <p><a href="#">Portfolio Website</a> – Personal portfolio to showcase my work.</p>
+      <p><a href="#">JavaScript App</a> – A small interactive app built with vanilla JS.</p>
+      <p><a href="#">React Project</a> – A task manager built with React.</p>
+    </section>
+  </main>
+</body>
+</html>
