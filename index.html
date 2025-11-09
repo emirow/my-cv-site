@@ -4,150 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Emir Emirov</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+
   <style>
-    /* Общий стиль */
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1a1c2c, #2e026d, #701a75);
-      color: #f1f5f9;
-      line-height: 1.7;
-      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      background-color: #0b182f;
+      color: #CCD6f6;
     }
 
-    h1, h2 {
-      color: #a78bfa;
-      text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+    .header {
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: nowrap;
+
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color: #0A192F;
+      z-index: 1000;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
     }
 
-    a {
-      color: #38f9d7;
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: nowrap;
+    }
+
+    .nav-links a {
       text-decoration: none;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
-    }
-    a:hover {
-      color: #f472b6;
-      text-shadow: 0 0 8px #f472b6;
-    }
-
-    /* Навигация */
-    nav {
-      background: rgba(26, 26, 46, 0.85);
-      backdrop-filter: blur(10px);
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    nav a {
-      margin: 0 14px;
-      font-weight: 600;
+      color: #CCD6f6;
       font-size: 16px;
+      white-space: nowrap;
     }
 
-    /* Основной контейнер */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 20px;
+    .right {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+    }
+
+    .right a {
+      color: #CCD6f6;
+      font-size: 16px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .logo { font-size: 16px; }
+      .nav-links a, .right a { font-size: 14px; }
+      .header-left { gap: 15px; }
+    }
+
+    .home {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .home h2 {
+      font-family: "NTR", sans-serif;
+      font-size: 70px;
+      margin: 0;
+    }
+
+    .home h2 .name {
+      color: #64ffDA;
+    }
+
+    .home p.main-text {
+      font-family: "NTR", sans-serif;
+      font-size: 36px;
+      color: #8892B0;
+      margin-top: -36px;
+    }
+
+    .home p.small-text {
+      font-family: "NTR", sans-serif;
+      font-size: 22px;
+      color: #8892B0;
+      margin-top: -25px;
+      line-height: 1.4;
+    }
+
+    .home button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 18px;
+      padding: 20px 30px;
+      background-color: #0A192F;
+      color: #64ffDA;
+      border: 2px solid #64ffDA;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     section {
-      margin-bottom: 80px;
-      padding: 25px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    section:hover {
-      transform: translateY(-5px);
+    section h2 {
+      font-family: 'NTR', sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
-    /* Кнопка */
-    button {
-      background: linear-gradient(90deg, #38f9d7, #43e97b);
-      color: #0f172a;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 0 15px rgba(56, 249, 215, 0.7);
-    }
-    button:hover {
-      background: linear-gradient(90deg, #f472b6, #c084fc);
-      color: white;
-      box-shadow: 0 0 20px rgba(244, 114, 182, 0.8);
+    section p, section li {
+      font-size: 18px;
+      color: #8892B0;
+      line-height: 1.6;
     }
 
-    /* Картинка справа */
-    #about img {
-      border-radius: 14px;
-      margin-left: 20px;
-      box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
+    section ul {
+      list-style: square;
+      padding-left: 20px;
     }
 
-    /* Список */
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      background: rgba(255, 255, 255, 0.08);
-      margin: 8px 0;
-      padding: 12px;
-      border-radius: 6px;
-      transition: 0.3s;
-    }
-    ul li:hover {
-      background: rgba(167, 139, 250, 0.2);
-    }
-
-    /* Проекты */
-    #projects p {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 14px;
-      border-radius: 6px;
-      margin: 12px 0;
-      transition: 0.3s;
-    }
-    #projects p:hover {
-      background: rgba(244, 114, 182, 0.2);
+    section img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  
-  <h1 id="top" style="text-align:center; margin-top:30px;">Emir Emirov</h1>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-  </nav>
+  <div class="header">
+    <div class="header-left">
+      <h1 class="logo">
+      <a href="#home" style="text-decoration: none; color: inherit;">Emir Emirov</a></h1>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+    
+    <div class="right">
+      <a href="#mailto:Emirovn@icloud.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></a>
+      <a href="https:..github.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+      <a href="https://linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
 
   <main>
-    <section id="home">
-      <h2>Hi, Emir Here!</h2>
-      <p>I build and design things for the web.</p>
-      <p><a href="mailto:Emirovn@icloud.com"><button>Say hi</button></a></p>
+
+    <section class="home" id="home">
+      <h2>hi,<span class="name"> Emir </span>here.</h2>
+      <p class="main-text">I build and design things for the web.</p>
+      <p class="small-text">Software engineer from Toronto, Canada. Fascinated by large-scale, high-impact products and contributed to major feature launches in top services and apps with 100M+ installs.</p>
+      <a href="mailto:Emirovn@icloud.com"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>Say hi!</button></a>
     </section>
 
     <section id="about">
       <h2>/about me</h2>
-      <img src="https://backiee.com/static/wallpapers/1000x563/386745.jpg"
-      alt="Profile" width="190" height="140" align="right">
-      <p>I am currently focused on becoming a <b>Frontend Developer</b> with a strong background in Software Engineering.  
-      I enjoy building modern, responsive, and user-friendly websites.</p>
+      <img src="https://backiee.com/static/wallpapers/1000x563/386745.jpg" alt="Profile" width="190" height="140">
+      <p>I am currently focused on becoming a <b>Frontend Developer</b> with a strong background in Software Engineering.  <br>I enjoy building modern, responsive, and user-friendly websites.</p>
       <p>Here are some technologies I have been working with:</p>
       <ul>
         <li>HTML & CSS</li>
@@ -161,12 +200,9 @@
     <section id="experience">
       <h2>/experience</h2>
       <p><b>Frontend Developer</b></p>
-      <p>Developing simple and responsive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.  
-      Focused on creating clean layouts and user-friendly interfaces. Collaborated on small projects and personal portfolio websites.</p>
-
+      <p>Developing simple and responsive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. Focused on creating clean layouts and user-friendly interfaces. Collaborated on small projects and personal portfolio websites.</p>
       <p><b>Background in Software Engineering</b></p>
-      <p>Have an academic background in Software Engineering, which helps me understand programming fundamentals and problem-solving approaches.  
-      While my main focus is <b>frontend development</b>, I am continuously learning new tools and programming languages to grow into a full-stack developer.</p>
+      <p>Have an academic background in Software Engineering, which helps me understand programming fundamentals and problem-solving approaches. While my main focus is <b>frontend development</b>, I am continuously learning new tools and programming languages to grow into a full-stack developer.</p>
     </section>
 
     <section id="projects">
@@ -176,5 +212,6 @@
       <p><a href="#">React Project</a> – A task manager built with React.</p>
     </section>
   </main>
+
 </body>
 </html>
