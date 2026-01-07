@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Emir Emirov</title>
   <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mysite.css">
 </head>
 <body>
-  
+
+
   <div class="header">
     <div class="header-left">
       <h1 class="logo"><a href="#home">Emir Emirov</a></h1>
@@ -30,68 +31,127 @@
 
   <main>
     <section class="home" id="home">
-      <h2>hi,<span class="name"> Emir </span>here.</h2>
-      <p class="main-text">I build and design things for the web.</p>
-      <p class="small-text">I am building my skills in JavaScript, React, Node.js and modern web technologies — step by step, every day.
-        I love solving problems, creating intuitive interfaces, and learning new tools that help me grow into a strong engineer.</p>
-      <a href="mailto:Emirovn@icloud.com">
-        <button>
+      <h2>hi,<span class="name"> Emir </span>here<span id="dots">.</span></h2>
+      <p class="main-text">I build websites that are clean, simple, and easy to use.
+      </p>
+      <p class="small-text">I’m a frontend developer based in Almaty, focused on responsive and user-friendly web interfaces. I work on responsive websites and small web projects, focusing on structure, clarity, and thoughtful design decisions. I care about how interfaces behave across devices and how small interactions improve the overall experience.</p>
+      <a href="mailto:Emirovn@icloud.com"class="home-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="m22 7-10 6L2 7"/>
             <rect x="2" y="4" width="20" height="16" rx="2"/>
           </svg>
           Say hi!
-        </button>
       </a>
     </section>
 
 <section id="about">
   <div class="section-title">
-    <h2>/about me</h2>
+    <h2>/ about me</h2>
     <span class="line"></span>
   </div>
 
   <div class="about-content">
     <div class="about-text">
-      <img src="https://backiee.com/static/wallpapers/1000x563/386745.jpg" alt="Profile" width="190" height="140">
-      <p>
-        I am currently focused on becoming a <b>Frontend Developer</b>.
-        I enjoy creating modern, responsive and user-friendly interfaces, and I’m constantly improving my skills through real projects.
-</p>
-
-<p>Technologies I am learning and working with:</p>
-<ul>
-  <li>HTML & CSS</li>
-  <li>JavaScript (ES6+)</li>
-  <li>React.js (in progress)</li>
-  <li>TypeScript (learning basics)</li>
-  <li>Python (basics)</li>
-</ul>
-    </section>
+      <p>I focus on building well-structured and maintainable frontend code. I care about layout consistency, responsive behavior, and small UI details that make interfaces feel clear and intuitive. I prefer simple solutions and try to write code that is easy to read and understand.</p>
+    <p>Here are some technologies I work with:</p>
+    <ul>
+      <li>HTML5 (semantic markup)</li>
+      <li>CSS3 (Flexbox, Grid, responsive layouts)</li>
+      <li>JavaScript (basic logic, DOM manipulation)</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </div>
+  <div class="about-image">
+    <img
+      src="https://backiee.com/static/wallpapers/1000x563/386745.jpg" alt="Profile">
+  </div>
+</div>
+</section>
 
     <section id="experience">
       <div class="section-title">
-      <h2>/experience</h2>
+      <h2>/ experience</h2>
       <span class="line"></span>
   </div>
-      <p><b>Frontend Developer (Trainee / Junior)</b></p>
+      <p><b>Frontend Developer</b></p>
 <p>
-  Creating simple, responsive and user-friendly websites using 
-  <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>.  
-  I focus on clean layout structure, adaptive design and writing understandable code.  
-  Currently improving my JavaScript skills and learning React to build modern interfaces.
-</p>
+  I build responsive and accessible websites using HTML, CSS, and JavaScript,
+  focusing on clean layout structure and user-friendly design. My experience
+  comes from personal and learning projects where I implement real interface
+  features from scratch.
 
-    </section>
+  I work with semantic HTML, Flexbox, and Grid to create adaptive layouts,
+  and I use JavaScript to add basic interactivity such as menu behavior,
+  UI states, and dynamic content. I pay attention to code readability,
+  naming, and file structure.
+
+  All projects are version-controlled with Git and published on GitHub.
+  Through these projects, I’ve developed a solid understanding of how
+  frontend code is structured and maintained.
+
+</p>
+</section>
 
     <section id="projects">
       <div class="section-title">
-    <h2>/projects</h2>
+    <h2>/ Pet Projects</h2>
     <span class="line"></span>
   </div>
-      <p><a href="#">Portfolio Website</a> – Personal portfolio to showcase my work.</p>
-      <p><a href="#">JavaScript App</a> – A small interactive app built with vanilla JS.</p>
-      <p><a href="#">React Project</a> – A task manager built with React.</p>
+
+  <div class="project-card">
+  <div class="project-header">
+    <div class="folder-icon">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none">
+        <path d="M3 6h6l2 2h10v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="project-links">
+  <a
+    href="https://github.com/emirow/my-cv-site"
+    target="_blank"
+    class="icon-link"
+    aria-label="GitHub repository"
+  >
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+      <path
+        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48
+        0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.5-1.1-1.5
+        -.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.9.85
+        .09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05
+        0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7
+        0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0
+        c1.9-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7
+        .64.72 1.03 1.64 1.03 2.76
+        0 3.92-2.34 4.79-4.57 5.05
+        .36.32.68.95.68 1.92
+        0 1.39-.01 2.51-.01 2.85
+        0 .26.18.58.69.48
+        A10.02 10.02 0 0 0 22 12.26
+        C22 6.58 17.52 2 12 2z"
+        fill="currentColor"
+      />
+    </svg>
+  </a>
+    </div>
+  </div>
+
+  <h3 class="project-title">My First Project</h3>
+
+  <p class="project-description">
+    A small frontend project where I practiced layout, responsiveness,
+    and basic JavaScript interactions.
+  </p>
+
+  <p class="project-tech">
+    HTML, CSS, JavaScript
+  </p>
+</div>
+
     </section>
   </main>
 
@@ -102,5 +162,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="mysite.js"></script>
 </body>
 </html>
