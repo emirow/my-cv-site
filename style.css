@@ -1,4 +1,4 @@
-html {
+    html {
       scroll-behavior: smooth;
     }
 
@@ -61,7 +61,6 @@ html {
       gap: 15px;
       flex-wrap: nowrap;
     }
-
     .right a {
       color: #CCD6f6;
       text-decoration: none;
@@ -102,7 +101,7 @@ html {
       margin-right: auto;
     }
 
-    .home button {
+    .home .home-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -115,12 +114,14 @@ html {
       border-radius: 6px;
       cursor: pointer;
       transition: all 0.3s ease;
+      text-decoration: none;
     }
 
-    .home button:hover {
+    .home .home-btn:hover {
       background-color: #112240;
       transform: translateY(-2px);
     }
+
 
     section {
       padding: 60px 20px;
@@ -145,14 +146,6 @@ html {
       padding-left: 20px;
     }
 
-    section img {
-      float: right;
-      width: 300px;
-      height: 200px;
-      margin: 20px;
-      border-radius: 10px;
-    }
-
     .section-title {
       display: flex;
       align-items: center;
@@ -174,64 +167,50 @@ html {
     }
 
     @media (max-width: 768px) {
-      .header {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-      }
-
-      @media (max-width: 768px) {
-        .header-left {
-        display: none;
-      }
-
-      @media (max-width: 480px) {
-        .section-title {
-          flex-direction: column;
-          align-items: flex-start; 
-  }
-
-      .section-title .line {
-        width: 50px;
-        margin-top: 5px;
-  }
-}
-
-
-      .header {
-        justify-content: flex-end; 
-        align-items: flex-end;    
-        padding-right: 20px;
-        padding-bottom: 5px;
-      }
+    .header {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 20px;
+      padding-bottom: 5px;
     }
 
-
-      .header-left {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .nav-links {
-        gap: 15px;
-      }
-
-      .home h2 {
-        font-size: 48px;
-      }
-
-      .home p.main-text {
-        font-size: 26px;
-      }
-
-      .home p.small-text {
-        font-size: 18px;
-      }
-
-      section {
-        padding: 40px 15px;
-      }
+    .header-left {
+      display: none;
     }
+
+    .nav-links {
+      gap: 15px;
+    }
+
+    .home h2 {
+      font-size: 48px;
+    }
+
+    .home p.main-text {
+      font-size: 26px;
+    }
+
+    .home p.small-text {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 40px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section-title .line {
+      width: 50px;
+      margin-top: 5px;
+    }
+  }
 
     .about-content {
       display: flex;
@@ -244,9 +223,13 @@ html {
     }
 
     .about-image img {
-      border-radius: 10px;
+      width: 300px;
+      height: 200px;
       object-fit: cover;
+      border-radius: 10px;
+      margin: 20px;
     }
+
     .footer {
       font-family: "NTR", sans-serif;
       font-size: 16px;
@@ -256,3 +239,73 @@ html {
       margin-bottom: 0px;
       padding-bottom: 0px;
     }
+
+    .project-card {
+    background-color: #112240;
+    border-radius: 18px;
+    padding: 24px;
+    max-width: 300px;
+    height: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .folder-icon {
+    color: #64ffda;
+  }
+
+  .project-links a {
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .project-links a:hover svg {
+    width: 28px;
+    height: 28px;
+    color: #64ffda;
+    transform: scale(1.15);
+    transition: 0.2s ease;
+  }
+
+
+  .project-title {
+    font-size: 20px;
+    margin-top: 38px;
+    color: #CCD6f6;
+  }
+
+  .project-description {
+    font-size: 16px;
+    color: #8892B0;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 55px;
+  }
+
+  .project-tech {
+    font-size: 14px;
+    color: #64ffDA;
+  }
+
+  @media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
