@@ -1,5 +1,6 @@
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
@@ -75,7 +76,7 @@
 
     .home h2 {
       font-family: "NTR", sans-serif;
-      font-size: 64px;
+      font-size: 62px;
       margin: 0;
     }
 
@@ -87,7 +88,7 @@
       font-family: "NTR", sans-serif;
       font-size: 20px;
       color: #8892B0;
-      margin-top: -18px;
+      margin-top: 4px;
       line-height: 1.4;
       max-width: 700px;
       margin-left: auto;
@@ -100,11 +101,11 @@
       justify-content: center;
       gap: 8px;
       padding: 16px 28px;
-      font-size: 18px;
+      font-size: 14px;
       background-color: #0A192F;
       color: #64ffDA;
       border: 2px solid #64ffDA;
-      border-radius: 6px;
+      border-radius: 12px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
@@ -177,15 +178,11 @@
     }
 
     .home h2 {
-      font-size: 48px;
-    }
-
-    .home p.main-text {
-      font-size: 26px;
+      font-size: 32px;
     }
 
     .home p.small-text {
-      font-size: 18px;
+      font-size: 14px;
     }
 
     section {
@@ -209,10 +206,12 @@
       display: flex;
       align-items: flex-start;
       gap: 30px;
+      
     }
 
     .about-text {
       flex: 1;
+      
     }
 
     .about-image img {
@@ -237,12 +236,12 @@
     }
 
     .project-card {
-    background-color: #112240;
-    border-radius: 18px;
-    padding: 24px;
-    height: 350px;
-    transition: transform 0.3s ease;
-  }
+      background-color: #112240;
+      border-radius: 18px;
+      padding: 24px;
+      height: 350px;
+      transition: transform 0.3s ease;
+    }
 
   .project-card:hover {
     transform: translateY(-6px);
@@ -296,6 +295,7 @@
   @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
+    
   }
 
   .about-image img {
@@ -315,15 +315,15 @@
     max-width: 980px;
   }
 
-  @media (max-width: 768px) {
-  .about-image img {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-  }
+   @media (max-width: 768px) {
+    .about-image img {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+    }
 
-  .about-image {
-    display: flex;
-    justify-content: center;
+    .about-image {
+      display: flex;
+      justify-content: center;
+    }
   }
-}
