@@ -311,6 +311,19 @@
     gap: 12px;
   }
 
-  #projects {
-  max-width: 980px;
+    #projects {
+    max-width: 980px;
+  }
+
+  @media (max-width: 768px) {
+  .about-image img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+  }
 }
