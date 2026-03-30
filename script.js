@@ -7,10 +7,6 @@ setInterval(() => {
   i = (i + 1) % frames.length;
 }, 400);
 
-setTimeout(() => {
-  alert("This site is currently being updated!");
-}, 3000);
-
 // disable copy
 document.addEventListener("copy", e => e.preventDefault());
 
