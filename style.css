@@ -238,13 +238,22 @@
     .project-card {
     background-color: #112240;
     border-radius: 18px;
-    padding: 24px;
-    height: 350px;
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    min-height: 220px;
+    flex-direction: column;
     transition: transform 0.3s ease;
   }
 
+  .project-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
   .project-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
+    transition: 0.3s;
   }
 
   .project-header {
@@ -275,16 +284,16 @@
 
   .project-title {
     font-size: 20px;
-    margin-top: 38px;
+    margin-top: 18px;
     color: #CCD6f6;
   }
 
   .project-description {
-    font-size: 16px;
+    font-size: 15px;
     color: #8892B0;
     line-height: 1.5;
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 
   .project-tech {
@@ -325,4 +334,11 @@
     display: flex;
     justify-content: center;
   }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    min-height: 180px;
+    padding: 18px;
+  }  
 }
