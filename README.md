@@ -4,7 +4,7 @@ This is my personal portfolio website where I showcase my web development skills
 
 🔗 Live Website
 
-https://emirow.github.io/my-cv-site/
+https://usmrem.github.io/my-cv-site/
 
 🚀 About The Project
 
@@ -29,4 +29,4 @@ Add animations
 
 Emirow
 
-GitHub: https://github.com/emirow
+GitHub: https://github.com/usmrem
