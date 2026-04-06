@@ -153,18 +153,6 @@ section ul li {
   margin-bottom: 8px;
 }
 
-section ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 0;
-  height: 0;
-  border-left: 6px solid #64ffda;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-}
-
 /* SECTION TITLE */
 
 .section-title {
@@ -206,6 +194,32 @@ section ul li::before {
   object-position: top;
   border-radius: 50%;
   border: 3px solid #64ffda;
+}
+
+/* TECHNOLOGY LIST (как на скриншоте) */
+
+.about-text .tech-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 150px));
+  gap: 8px 25px;
+  margin-top: 20px;
+}
+
+.about-text .tech-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+  color: #8892B0;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.about-text .tech-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #64ffda;
 }
 
 /* PROJECTS */
@@ -333,6 +347,10 @@ section ul li::before {
     width: 200px;
     height: 200px;
     margin: 20px auto;
+  }
+
+  .about-text .tech-list {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 }
 
